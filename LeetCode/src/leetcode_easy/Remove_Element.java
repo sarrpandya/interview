@@ -20,7 +20,7 @@ public class Remove_Element {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub.
 
 		int[] arr = { 2,3,3,2};
 		int val = 3;
