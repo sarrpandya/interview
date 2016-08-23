@@ -19,7 +19,7 @@ public class Factorial {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n = 100;
+		int n = 5;
 		System.out.println(Factorial.fact(n));
 
 	}
