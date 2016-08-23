@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 For example,"egg" and "add" are isomorphic, "foo" and "bar" are not.
 
-Analysis
+Analysis..
 
 We can define a map which tracks the char-char mappings. If a value is already mapped, it can not be mapped again.
 
