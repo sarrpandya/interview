@@ -1,7 +1,6 @@
 package leetcode_easy;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 public class Majority_Element {
@@ -20,12 +19,10 @@ public class Majority_Element {
 				map.put(a, 1);
 			}
 		}
-		Iterator iterateArrayElementsCounts = map.entrySet().iterator();
-		while (iterateArrayElementsCounts.hasNext()) {
-			Map.Entry<Integer, Integer> entry = (Map.Entry) iterateArrayElementsCounts.next();
-			if (entry.getValue() > (nums.length / 2)) {
-				return entry.getKey();
-			}
+		for(Map.Entry<Integer, Integer> entry : map.entrySet()){
+		    if (entry.getValue() > (nums.length / 2)) {
+			return entry.getKey();
+		}
 		}
 		return 0;
 
