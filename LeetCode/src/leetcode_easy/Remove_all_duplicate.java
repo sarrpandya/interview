@@ -13,6 +13,8 @@ public class Remove_all_duplicate {
 		List<Integer> al= Arrays.stream(arr).boxed().collect(Collectors.toList());
 		TreeSet<Integer> ts = new TreeSet<Integer>(al);
 		System.out.println(ts);
+		//String[] strings = list.stream().toArray(String[]::new);
+		//arraylist to array
 	}
 
 }

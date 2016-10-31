@@ -4,11 +4,16 @@ import java.util.HashSet;
 
 public class Remove_Duplicates_from_Sorted_Array {
 	public static int removeDuplicates(int[] nums) {
-		HashSet<Integer> set = new HashSet<Integer>();
-		for (int temp : nums) {
-			set.add(temp);
+		if (nums.length == 0)
+			return 0;
+		int i = 0;
+		for (int j = 1; j < nums.length; j++) {
+			if (nums[j] != nums[i]) {
+				i++;
+				nums[i] = nums[j];
+			}
 		}
-		return set.size();
+		return i + 1;
 
 	}
 

@@ -7,7 +7,7 @@ public class Prime_number {
 		if (n <= 1) {
 			return false;
 		}
-		for (int j = 2; j < n; j++) {
+		for (int j = 2; j*j <=n; j++) {
 			if (n % j == 0)
 				return false;
 		}
@@ -16,7 +16,7 @@ public class Prime_number {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n = 10;
+		int n = 3;
 		for (int i = 1; i <= n; i++) {
 			if (isPrimeNumber(i)) {
 				System.out.println(i);
