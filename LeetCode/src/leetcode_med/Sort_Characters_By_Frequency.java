@@ -23,6 +23,7 @@ public class Sort_Characters_By_Frequency {
 				return o2.getValue().compareTo(o1.getValue());
 			}
 		});
+		//list.sort((Map.Entry<Character, Integer> o1, Map.Entry<Character, Integer> o2)->o1.getValue().compareTo(o2.getValue()));
 		StringBuffer sb = new StringBuffer();
 		for (Map.Entry<Character, Integer> e : list) {
 			for (int i = 0; i < e.getValue(); i++) {
