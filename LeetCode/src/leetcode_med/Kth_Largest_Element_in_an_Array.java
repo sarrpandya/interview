@@ -3,15 +3,15 @@ package leetcode_med;
 import java.util.Arrays;
 
 public class Kth_Largest_Element_in_an_Array {
-	public static int[] sort(int[] nums) {
+	public static int sort(int[] nums, int k) {
 
 		if (nums == null || nums.length == 0) {
-			return null;
+			return (Integer) null;
 		}
 
 		int length = nums.length;
-		return quickSort(0, length - 1, nums);
-
+		quickSort(0, length - 1, nums);
+		return nums[nums.length - k];
 	}
 
 	private static int[] quickSort(int lowerIndex, int higherIndex, int[] nums) {
@@ -60,9 +60,7 @@ public class Kth_Largest_Element_in_an_Array {
 		// TODO Auto-generated method stub
 		int[] nums = { 3, 8, 2, 7, 5 };
 		int k = 2;
-		int[] ans = Kth_Largest_Element_in_an_Array.sort(nums);
-		int pos = ans[ans.length - k];
-		System.out.println(pos);
+		System.out.println(Kth_Largest_Element_in_an_Array.sort(nums, k));
 
 	}
 
