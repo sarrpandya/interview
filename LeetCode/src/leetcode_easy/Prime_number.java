@@ -16,7 +16,7 @@ public class Prime_number {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n = 3;
+		int n = 10;
 		for (int i = 1; i <= n; i++) {
 			if (isPrimeNumber(i)) {
 				System.out.println(i);
