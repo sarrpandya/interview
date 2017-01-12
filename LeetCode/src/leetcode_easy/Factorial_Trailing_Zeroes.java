@@ -15,7 +15,7 @@ public class Factorial_Trailing_Zeroes {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(Factorial_Trailing_Zeroes.trailingZeroes(30));
+		System.out.println(Factorial_Trailing_Zeroes.trailingZeroes(27));
 
 	}
 
