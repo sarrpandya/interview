@@ -19,7 +19,7 @@ public class Longest_Palindrome {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println(Longest_Palindrome.longestPalindrome("dccaweweccdxyz"));
+		System.out.println(Longest_Palindrome.longestPalindrome("abccccdd"));
 	}
 
 }

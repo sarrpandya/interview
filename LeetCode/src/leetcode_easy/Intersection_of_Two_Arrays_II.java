@@ -40,8 +40,8 @@ public class Intersection_of_Two_Arrays_II {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] a = { 1, 2, 2, 1 };
-		int[] b = { 2, 2,2 };
+		int[] a = { 1, 2, 2, 1,3 };
+		int[] b = { 2, 2,3,4};
 		int[] _ans = Intersection_of_Two_Arrays_II.intersect(a, b);
 		System.out.println(Arrays.toString(_ans));
 
