@@ -27,7 +27,7 @@ public class demo {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = { 1, 2, 2, 3, 3 };
+		int[] arr = { 1, 2, 2,4, 3, 2 };
 		arr = removeDuplicates(arr);
 		System.out.println(arr.length);
 	}
