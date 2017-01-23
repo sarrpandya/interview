@@ -3,28 +3,29 @@ package leetcode_easy;
 import java.util.Arrays;
 
 public class Move_Zeros {
-	
+
 	// i track 0 and j tracks non 0
 	public static int[] moveZeroes(int[] nums) {
-		int i = 0;
 		int j = 0;
+		// int j = 0;
 
-		while (j < nums.length) {
-			if (nums[j] == 0) {
-				j++;
+		// while (j < nums.length) {
+		for (int i = 0; i < nums.length; i++) {
+
+			if (nums[i] == 0) {
+				continue ;
 			} else {
-				nums[i] = nums[j];
-				i++;
+				nums[j] = nums[i];
 				j++;
 			}
 		}
-//convert element into 0
-		while (i < nums.length) {
-			nums[i] = 0;
-			i++;
+		// convert element into 0
+		while (j < nums.length) {
+			nums[j] = 0;
+			j++;
 		}
-
 		return nums;
+
 	}
 
 	public static void main(String[] args) {

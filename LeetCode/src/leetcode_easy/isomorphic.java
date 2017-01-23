@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 For example,"egg" and "add" are isomorphic, "foo" and "bar" are not.
 
-Analysis
+Analysis..
 
 We can define a map which tracks the char-char mappings. If a value is already mapped, it can not be mapped again.
 
@@ -15,7 +15,7 @@ We can define a map which tracks the char-char mappings. If a value is already m
  */
 public class isomorphic {
 	public static boolean isIsomorphic(String s, String t) {
-	    if(s==null||t==null)
+		if(s==null||t==null)
 	        return false;
 	 
 	    if(s.length()!=t.length())
@@ -32,7 +32,8 @@ public class isomorphic {
 	            if(map.get(c1)!=c2)// if not consistant with previous ones
 	                return false;
 	        }else{
-	           
+	            if(map.containsValue(c2)) //if c2 is already being mapped
+	                return false;
 	            map.put(c1, c2);
 	        }
 	    }
@@ -42,7 +43,7 @@ public class isomorphic {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(isomorphic.isIsomorphic("aab", "xyz"));
+		System.out.println(isomorphic.isIsomorphic("abc", "xxz"));
 
 	}
 
