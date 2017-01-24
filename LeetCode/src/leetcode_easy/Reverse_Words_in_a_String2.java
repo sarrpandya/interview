@@ -29,7 +29,7 @@ public class Reverse_Words_in_a_String2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String str = "the sky is blue";
+		String str = "apple is  red is the color";
 		char[] ch = str.toCharArray();
 		String ans = String.valueOf(Reverse_Words_in_a_String2.rev(ch));
 		System.out.println(ans);
