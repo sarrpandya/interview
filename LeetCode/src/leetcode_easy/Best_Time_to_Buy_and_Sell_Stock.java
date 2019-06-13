@@ -10,6 +10,7 @@ public class Best_Time_to_Buy_and_Sell_Stock {
             else if (prices[i] - minprice > maxprofit)
                 maxprofit = prices[i] - minprice;
         }
+        
         return maxprofit;
 	}
 
